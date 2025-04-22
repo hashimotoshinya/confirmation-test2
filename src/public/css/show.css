@@ -1,0 +1,114 @@
+.product-detail-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-detail-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.product-detail-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-detail-info {
+    flex: 1;
+}
+
+.product-detail-info label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.product-detail-info input[type="text"],
+.product-detail-info input[type="number"],
+.product-detail-info textarea,
+.product-detail-info input[type="file"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-detail-info textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.season-checkboxes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.season-checkboxes label {
+    font-weight: normal;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.back-button,
+.save-button,
+.delete-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.back-button {
+    background-color: #6c757d;
+}
+
+.save-button {
+    background-color: #28a745;
+}
+
+.delete-button {
+    margin-top: 10px;
+    background-color: #dc3545;
+    width: 20%;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
