@@ -31,14 +31,13 @@
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/yourname/yourrepo.git
-cd yourrepo
+git clone git@github.com:hashimotoshinya/confirmation-test2.git
 
 # Docker起動
 docker-compose up -d
 
 # PHPコンテナに入る
-docker exec -it your_php_container bash
+docker-compose exec your_php_container bash
 
 # Laravelプロジェクトのセットアップ
 composer install
@@ -52,3 +51,9 @@ php artisan key:generate
 
 # マイグレーションとシーディング
 php artisan migrate --seed
+
+---
+
+## 📊 ER図
+
+![ER図](./ER.drawio.png)
