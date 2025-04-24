@@ -33,7 +33,7 @@
 git clone git@github.com:hashimotoshinya/confirmation-test2.git
 
 # Docker起動
-docker-compose up -d
+docker-compose up -d --build
 
 # PHPコンテナに入る
 docker-compose exec your_php_container bash
@@ -50,6 +50,9 @@ php artisan key:generate
 
 # マイグレーションとシーディング
 php artisan migrate --seed
+
+# シンボリックリンク作成
+php artisan storage:link
 
 ---
 
