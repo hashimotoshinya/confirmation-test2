@@ -100,8 +100,29 @@
     font-size: 15px;
 }
 
-.pagination-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+.custom-pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination-list {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 8px;
+}
+
+.pagination-list li {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination-list li.active {
+    background-color: #3490dc;
+    color: white;
+}
+
+.pagination-list li.disabled {
+    color: #aaa;
 }

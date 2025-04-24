@@ -1,8 +1,10 @@
 /node_modules
 /public/hot
 /public/storage
-#/storage/*.key
-#/storage
+# Ignore everything in storage except specific folders
+/storage/*
+!/storage/app
+!/storage/app/public
 !/storage/app/public/images
 !/storage/.gitignore
 /vendor

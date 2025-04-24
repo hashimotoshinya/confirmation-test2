@@ -42,7 +42,7 @@
     </div>
 
     <div class="pagination-wrapper">
-        {{ $products->links() }}
+        {{ $products->links('vendor.pagination.default') }}
     </div>
 </div>
 @endsection

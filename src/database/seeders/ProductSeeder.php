@@ -14,7 +14,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->insert([
+        $products = [
             [
                 'name' => 'キウイ',
                 'price' => 800,
@@ -85,6 +85,14 @@ class ProductSeeder extends Seeder
                 'season' => '春, 夏',
                 'description' => '香りがよくジューシーで品のある甘さが人気のメロンスムージー。カリウムが多く含まれているためむくみ解消効果も抜群です。もぎたてフルーツのスムージーをお召し上がりください！'
             ],
-        ]);
+        ];
+
+        foreach ($products as $product)
+        {
+            DB::table('products')->updateOrInsert(
+                ['name' =>$product['name']],
+                $product
+            );
+        }
     }
 }
